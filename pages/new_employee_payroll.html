@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/new_emp_payroll.css">
+    <link rel="stylesheet" href="../css/new_employee_payroll.css">
     <title>Employee payroll form</title>
 </head>
 <body>
@@ -19,10 +19,8 @@
             </div>
         </div>
     </header>
-</body>
-</html>
 
-<!-- UC2:Ability to create a form Header and the Input Text Element for Name -->
+   <!-- UC2:Ability to create a form Header and the Input Text Element for Name -->
 
 <div class="form-content">
     <form class="form" action="#" 
@@ -35,7 +33,63 @@
             <input class="input" type="text" id="name" 
             name="name" placeholder="Your name.." 
             required> <!--Placeholder giving hints-->
+        </div>
+   <!--UC3:Specify profile pic to the Employee payroll App-->
+ <div class="row-content">
+    <label class="label text" for="profile">Profile image</label>
+    <div class="profile-radio-content">
+        <label>
+            <input type="radio" id="profile1" name="profile" value="C:\Users\Admin\Desktop\EmpPayrollApp\assests\profile-images\Ellipse -3.png" required>
+            <img src="C:\Users\Admin\Desktop\EmpPayrollApp\assests\profile-images\Ellipse -3.png" id="image1" alt="Image 3" class="profile">
+        </label>
+        <label>
+            <input type="radio" id="profile2" name="profile" value="C:\Users\Admin\Desktop\EmpPayrollApp\assests\profile-images\Ellipse -1.png" required>
+            <img src="C:\Users\Admin\Desktop\EmpPayrollApp\assests\profile-images\Ellipse -1.png" id="image2" alt="Image 1" class="profile">
+        </label>
+        <label>
+            <input type="radio" id="profile3" name="profile" value="C:\Users\Admin\Desktop\EmpPayrollApp\assests\profile-images\Ellipse -8.png" required>
+            <img src="C:\Users\Admin\Desktop\EmpPayrollApp\assests\profile-images\Ellipse -8.png" id="image3" alt="Image 8" class="profile">
+        </label>
+        <label>
+            <input type="radio" id="profile4" name="profile" value="C:\Users\Admin\Desktop\EmpPayrollApp\assests\profile-images\Ellipse -7.png" required>
+            <img src="C:\Users\Admin\Desktop\EmpPayrollApp\assests\profile-images\Ellipse -7.png" id="image4" alt="Image 7" class="profile">
+        </label>
+    </div>
+  </div>
+
+    <!--UC4:Adding gender,department & salary to the form-->
+    <div class="row-content">
+        <label class="label text" for="gender">Gender</label>
+            <div>
+                <input type="radio" id="male" name="gender" value="male">
+                <label class="text" for="male">Male</label>
+                <input type="radio" id="Female" name="gender" value="Female">
+                <label class="text" for="Female">Female</label>
             </div>
-    </form>
+    </div>
+    <div class="row-content">
+        <label class="label text ">Department</label>
+            <div>
+                <input type="checkbox" id="HR" value="HR" name="department">
+                <label for="HR" class="department" >HR</label>
+                <input type="checkbox" id="Sales"name="department" value="Sales">
+                <label for="Sales" class="department" >Sales</label>
+                <input type="checkbox" id="Finance" name="department" value="Finance">
+                <label for="Finance" class="department" >Finance</label>
+                <input type="checkbox" id="Engineer" name="department" value="Engineer">
+                <label for="Engineer" class="department" >Engineer</label>
+                <input type="checkbox" id="Others" name="department" value="Others">
+                <label for="Others" class="department" >Others</label>
+            </div>
+    </div>  
+    <div class="row-content">
+        <label class="label" for="salary">Salary</label>
+        <input type="range" class="input" id="salary" min="300000" max="500000" step="100" name="salary"
+        value="400000">
+        <output class="salary-output" id="salary-output" for="salary" value="400000">400000</output>
+    </div>
+</form>
 </div>
+</body>
+</html>
 
