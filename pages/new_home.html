@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="C:\Users\Admin\Desktop\EmpPayrollApp\css\new_home.css">
+    <title>Employee payroll form</title>
+   </head>
+   <body>
+  <!-- UC1:Ability to create an Employee Payroll System UI -->
+
+  <header class="header-content header">
+    <div class="logo-content">
+        <img src="C:\Users\Admin\Desktop\EmpPayrollApp\assests\images\logo.png" alt="">
+        <div>
+            <span class="emp-text">EMPLOYEE</span><br>
+            <span class="emp-text emp-payroll">PAYROLL</span>
+        </div>
+    </div>
+</header>
+
+ <!--UC2:Creating header section and add user botton and -->
+
+    <div class="header-content">
+        <div class="emp-detail-text">
+          Employee Details <div class="emp-count">10</div>
+        </div>
+        <a href="new_employee_payroll.html" class="add-button">
+          <img src="C:\Users\Admin\Desktop\EmpPayrollApp\assests\icons\add-24px.svg" alt="">Add User</a>
+      </div> <!-- header-content -->
+    </div>
+
+    <!--UC3: Dispaly Employee Detaiils in tabular format-->
+   <table id="display" class="table">
+          <tr>
+              <th></th>
+              <th>Name</th>
+              <th>Gender</th>
+              <th>Department</th>
+              <th>Salary</th>
+              <th>Start Date</th>
+              <th>Actions</th>
+          </tr>
+          <tr>
+              <td><img class="profile" alt="" src="C:\Users\Admin\Desktop\EmpPayrollApp\assests\profile-images\Ellipse -2.png">
+              </td>
+              <td>Srujan Mahajan</td>
+              <td>Male</td>
+              <td><div class="dept-label">HR</div>
+                  <div class="dept-label">Finance</div></td>
+              <td>3000000</td>
+              <td>01 Nov 2020</td>
+              <td>
+                  <img id="1" onclick="remove(this)" alt="delete" 
+                  src="C:\Users\Admin\Desktop\EmpPayrollApp\assests\icons\delete-black-18dp.svg" 
+                  <img id="1" onclick="update(this)" alt="edit"
+                  src="C:\Users\Admin\Desktop\EmpPayrollApp\assests\icons\create-black-18dp.svg"
+              </td>
+          </tr>
+      </table>
+  </div>
+</body>
+</html>
+
