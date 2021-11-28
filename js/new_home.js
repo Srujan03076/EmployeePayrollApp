@@ -23,4 +23,3 @@ const createInnerHtml= () => {
     `;
     document.querySelector('#table-display').innerHTML=innerHtml;
 }
-//UC6:
